@@ -8,7 +8,7 @@ from var import Var
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
-    bot = TelegramClient(StringSession(session_name), Var1075033, Var99922a9ab3cf37fa1892511ba55fe33e)
+    bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
 else:
     session_name = "startup"
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
